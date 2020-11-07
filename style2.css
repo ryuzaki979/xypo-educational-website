@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.logo {
+    width: 100px;
+    margin-top: 30px;
+}
+.header-text {
+    max-width: 300px;
+    margin-top: 140px;
+}
+.header-text h1 {
+    font-size: 34px;
+}
+.square {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #f67c92;
+    margin: 15px 0;
+}
+.common-button {
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #f67c92;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+p {
+    color: #777;
+    font-size: 15px;
+    line-height: 18px;
+}
+.line-1 {
+    width: 15px;
+    height: 15px;
+    background: #f67c92;
+    display: inline-block;
+}
+.line-2 {
+    width: 80px;
+    height: 1px;
+    background: #f67c92;
+    display: inline-block;
+}
+.line-3 {
+    width: 60px;
+    height: 1px;
+    background: #f67c92;
+    display: inline-block;
+}
+.line {
+    line-height: 8px;
+}
+#navbar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background:#f67c92;
+    transition: .5s;
+    /*z-index: 2;*/
+}
+nav li {
+    list-style: none;
+    margin: 20px 40px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+#menuButton {
+    width: 50px;
+    position: fixed;
+    right: 45px;
+    top: 35px;
+}
+
+/*----------------------About-------------------*/
+
+#about, #offer {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left-col {
+    flex-basis: 50%;
+}
+.left-col img {
+    width: 100%;
+}
+
+.right-col {
+    flex-basis: 50%;
+    text-align: right;
+}
+.about-text {
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+
+.about-text h2 {
+    margin: 50px 0 10px;
+    font-size: 28px;
+}
+.about-text h3 {
+    font-size: 20px;
+    color: #797979
+}
+/*--------------------fetaures-----------------------*/
+
+#features {
+    padding: 50px 0;
+}
+
+.feature-row {
+    width: 80%;
+    margin: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid;
+}
+.feature-col {
+    flex-basis: 20%;
+    text-align: center;
+}
+.feature-col img {
+    width: 100px;
+}
+.feature-col h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.feature-button {
+    margin: 80px auto 0;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+}
+.feature-button .line {
+    text-align: right;
+    display: inline-block;
+    margin-right: 25px;
+
+}
+/*---------------------course----------------*/
+
+#course {
+    padding: 100px 0;
+}
+.course-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.course-right-col {
+    flex-basis: 50%;
+}
+.course-left-col {
+    flex-basis: 50%;
+}
+.course-right-col img {
+    width: 100%;
+}
+
+.course-text {
+    max-width: 350px;
+}
+
+#course .common-button {
+    font-size: 13px;
+    width: 30%;
+    margin: 30px 0;
+}
+
+#offer .common-button {
+    margin: 20px 0;
+}
+
+/*------------contact--------*/
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-left-col, .contact-right-col {
+    flex-basis: 50%;
+}
+.contact-right-col img {
+    width: 100%;
+}
+
+form {
+    max-width: 350px;
+    margin: 30px 0;
+}
+form input {
+    width: 100%;
+    padding: 12px 10px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 1px solid #f67c92;
+    margin: 5px 0;
+}
+
+.button-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-box button {
+    flex-basis: 48%;
+    padding: 18px 0;
+}
+/*---------------------footer----------------*/
+#footer {
+padding: 50px 0 30px;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid pink;
+}
+
+.footer-row {
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.footer-left-col {
+    flex-basis: 50%;
+    margin-top: 60px;
+}
+
+.footer-right-col {
+    flex-basis: 35%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link-title h4 {
+    color: #fab3c4;
+    margin-bottom: 20px;
+}
+
+.link-title small {
+    font-size: 13px;
+    color: #777;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.footer-logo img {
+    width: 100px;
+}
+.footer-logo button {
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+.copywrite-text,.footer-logo {
+    flex-basis: 40%;
+}
+
+.social-icons {
+    
+    writing-mode: vertical-rl;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.social-icons img {
+    margin: 1rem;
+    width: 20px;
+}
+
+@media only screen and (max-width:778px) {
+    #header {
+        background-image:  none;
+    }
+    .container {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .logo {
+        width: 70px;
+        margin-top: 27px;
+    }
+    .header-text {
+        margin-top: 100px;
+    }
+    .header-text h1 {
+        font-size: 25px;
+    }
+    #menuButton {
+        width: 40px;
+        right: 50px;
+    }
+    .common-button {
+        padding: 10px 16px;
+}
+.social-icons img {
+    margin: 1rem;
+    width: 14px;
+}
+.left-col {
+    flex-basis: 100%;
+}
+.right-col {
+    flex-basis: 100%;
+}
+.about-text {
+    margin: 50px 50px 0;
+    display: inline-block;
+}
+
+.about-text h2 {
+    font-size: 18px;
+}
+.feature-col {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+.course-left-col {
+    flex-basis: 100%;
+}
+.course-right-col {
+    flex-basis: 100%;
+    margin-top: 70px;
+}
+.contact-left-col, .contact-right-col {
+    flex-basis: 100%;
+}
+.contact-right-col {
+    margin-top: 50px;
+}
+.footer-left-col, .footer-right-col {
+    flex-basis: 100%;
+}
+.link-title {
+    flex-basis: 50%;
+    margin-bottom:30px;
+}
+}
